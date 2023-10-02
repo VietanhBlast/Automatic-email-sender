@@ -5,9 +5,9 @@ import datetime as dt
 from email.message import EmailMessage
 
 subject ="email From python" #what will be sent
-body = "this is a test email form python! lol wtf"
-sender_email = "pythontester126@gmail.com"
-receiver_email = "yan2020pham@gmail.com"
+body = "this is a test email form python! lol"
+sender_email = "email" 
+receiver_email = "email"
 password = input("password here:") #google app key
 send_time = dt.datetime(2023,9,30,20,40,0)#year,month,day,hour,min,sec
 time.sleep(send_time.timestamp() - time.time())
