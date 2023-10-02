@@ -1,4 +1,6 @@
-# Automatic-email-sender
+# Automatic-email-sender 
+
+This repository contains projects/programs and is Still in progress of importing and organizing projects
 
 Description of project: An Automatic-email-sender that will read a list of email and send them a email containing a keylogger.It should have a timer to send an email at a set frequency
 
