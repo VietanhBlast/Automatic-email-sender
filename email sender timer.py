@@ -22,9 +22,8 @@ message.set_content(body)
 context = ssl.create_default_context()
 
 print("Sending Email!")
-with smtplib.SMTP_SSL("smtp.gmail.com",465,context=context) as sever:
-    
-    sever.login(sender_email,password)
-    
-    sever.sendmail(sender_email, receiver_email, message.as_string())
+for x in range(3): #how many times it will send
+    with smtplib.SMTP_SSL("smtp.gmail.com",465,context=context) as sever:
+        sever.login(sender_email,password)
+        sever.sendmail(sender_email, receiver_email, message.as_string())
     
