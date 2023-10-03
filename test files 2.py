@@ -7,21 +7,15 @@ import pandas as pd
 
 subject ="email From python" #what will be sent
 
-sender_email = "pythontester126@gmail.com"
+sender_email = "senders email"
 password = input("password here:") #google app key
 
-email_list = pd.read_excel('C:/Users/vieta/PycharmProjects/pythonProject for fun/email.xlsx')
+email_list = pd.read_excel('the path to an excel file')
 names = email_list['NAME']
 emails = email_list['EMAIL']
 
 send_time = dt.datetime(2023,10,3,17,35,0)#year,month,day,hour,min,sec
-time.sleep(send_time.timestamp() - time.time())
-
-#message = EmailMessage()
-#message ["From"] = sender_email
-#message ["to"] = emails
-#message ["Subject"] = subject
-#message.set_content(body)
+time.sleep(send_time.timestamp() - time.time())#the timer
 
 context = ssl.create_default_context()
 
