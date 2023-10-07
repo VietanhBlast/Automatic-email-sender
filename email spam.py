@@ -35,7 +35,7 @@ def send_mail(): # function that sends an email
             sever.login(sender_email,password)
             sever.sendmail(sender_email, [receiver_emails], message.as_string())
             
-def job(t):
+def job(t):#thsi function sends an email every day at a certain time
     send_mail(), t
     return
 
